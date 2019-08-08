@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>vue-rangir</title>
+  <style>
+    body *
+    {
+      font-size: 16px;
+    }
+
+    .wrapper
+    {
+      width: 750px;
+      padding: 5px 5px 15px 5px;
+
+      list-style-type: none;
+
+      background-color: cornsilk;
+    }
+
+    .container
+    {
+      width: 700px;
+      height: 400px;
+    }
+
+    .form-row
+    {
+      display: flex;
+
+      padding: 5px;
+
+      justify-content: center;
+    }
+
+    .form-row > input,
+    .form-row > button
+    {
+      padding: 5px;
+    }
+
+    .form-row > input
+    {
+      width: 50px;
+      margin-left: 5px;
+
+      border: 1px solid black;
+
+      flex: 1;
+    }
+
+    .form-row > label
+    {
+      padding: 5px 0 5px 0;
+
+      flex: 10;
+    }
+
+    .form-row > button
+    {
+      width: 200px;
+      margin: 0 5px 0 5px;
+
+      color: white;
+      border: 0;
+      background: seagreen;
+    }
+
+    .form-row > button:hover
+    {
+      background: mediumseagreen;
+    }
+
+    input[type='number']
+    {
+      -moz-appearance: textfield;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button
+    {
+      -webkit-appearance: none;
+    }
+
+    li
+    {
+      list-style-type: none;
+    }
+
+    ul
+    {
+      margin: 0;
+      padding: 0;
+    }
+
+    .rangir *
+    {
+      border-collapse: collapse;
+
+      border: 1px solid black;
+    }
+
+    @keyframes borderChange
+    {
+      0%
+      {
+        border: 1px solid black;
+      }
+      25%
+      {
+        border: 1px solid red;
+      }
+      50%
+      {
+        border: 1px solid yellow;
+      }
+      75%
+      {
+        border: 1px solid red;
+      }
+      100%
+      {
+        border: 1px solid black;
+      }
+    }
+
+    .borderRed
+    {
+      animation: borderChange 1s linear infinite;
+    }
+
+    button:disabled,
+    button:disabled:hover
+    {
+      color: #666;
+      /*border: 1px solid #999999;*/
+      background-color: #ccc;
+    }
+
+    .dataInput
+    {
+      width: 30px;
+
+      border: 1px solid black;
+    }
+
+  </style>
+
+</head>
+<body>
+<div id="app"></div>
+<script src="/dist/build.js"></script>
+</body>
+</html>
